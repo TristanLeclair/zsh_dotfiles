@@ -41,7 +41,6 @@ autoload -Uz colors && colors
 
 # z
 . $ZDOTDIR/plugins/z/z.sh
-set $_Z_DATA $ZDOTDIR/plugins/z/.z
 
 # Plugins, must be installed via git in the $ZDOTDIR/plugins directory
 
