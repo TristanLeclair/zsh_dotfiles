@@ -1,0 +1,19 @@
+#Aliases
+
+#Apps
+alias browser='/mnt/c/Program Files/Mozilla Firefox/firefox.exe'
+alias open='cmd.exe /C start'
+
+#CD Shortcuts
+alias trist='cd /mnt/c/Users/trist'
+alias github='cd /mnt/c/Users/trist/Github'
+
+#LS
+alias ll='ls -alF'
+alias la='ls -a' 
+
+#Git
+alias g=git
+
+#Vim
+alias v=nvim
