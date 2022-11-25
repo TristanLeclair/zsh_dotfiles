@@ -44,13 +44,17 @@ autoload -Uz colors && colors
 
 # Plugins, must be installed via git in the $ZDOTDIR/plugins directory
 
-source $ZDOTDIR/plugins/zsh-autosuggestion/zsh-autosuggestions.zsh
+source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #Theme for syntax highlighting
 source $ZDOTDIR/plugins/catppuccin/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZDOTDIR/plugins/powerlevel10k/powerlevel10k.zsh-theme
+
+# Apt plugins suggestions
+# apt install command-not-found
+source /etc/zsh_command_not_found
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
