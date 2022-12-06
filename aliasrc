@@ -10,7 +10,7 @@ alias github='cd /mnt/c/Users/trist/Github'
 
 #LS
 alias ls='ls --color=auto'
-alias ll='ls -alF'
+alias ll='exa -lah --icons'
 alias la='ls -a' 
 
 #Git
