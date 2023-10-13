@@ -1,7 +1,7 @@
 #Aliases
 
 #Apps
-alias browser='/mnt/c/Program Files/Mozilla Firefox/firefox.exe'
+alias browser='/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe'
 alias open='cmd.exe /C start'
 
 #CD Shortcuts
@@ -30,3 +30,14 @@ alias v=nvim
       alias fgrep='fgrep --color=auto'
       alias egrep='egrep --color=auto'
   fi
+
+# CLI things
+alias lc='wc -l'
+
+# tmux
+alias ta='tmux a'
+alias ts='tmux new'
+alias tat='tmux a -t'
+alias tst='tmux new -s'
+
+alias tree="tree -I '.git|venv'"
