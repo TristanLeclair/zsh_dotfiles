@@ -32,6 +32,11 @@
 
 - `apt install command-not-found`
 
+### gitignore
+
+- `mkdir ~/.config/zsh/plugins/gitignore`
+- https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/gitignore/gitignore.plugin.zsh
+
 ## Next steps for setup
 
 - neovim

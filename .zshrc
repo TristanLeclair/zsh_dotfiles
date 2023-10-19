@@ -52,6 +52,9 @@ source $ZDOTDIR/plugins/catppuccin/catppuccin_mocha-zsh-syntax-highlighting.zsh
 source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZDOTDIR/plugins/powerlevel10k/powerlevel10k.zsh-theme
 
+# Gitignore plugin
+source $ZDOTDIR/plugins/gitignore/gitignore.plugin.zsh
+
 # Apt plugins suggestions
 # apt install command-not-found
 source /etc/zsh_command_not_found
