@@ -41,3 +41,7 @@ alias tat='tmux a -t'
 alias tst='tmux new -s'
 
 alias tree="tree -I '.git|venv'"
+
+# Python
+alias startenv='source venv/bin/activate'
+alias startdevenv='source dev-venv/bin/activate'
