@@ -16,6 +16,7 @@ alias la='ls -a'
 #Git
 alias g=git
 alias gst='git status'
+alias lg=lazygit
 
 #Vim
 alias v=nvim
