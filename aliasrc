@@ -17,6 +17,7 @@ alias la='ls -a'
 alias g=git
 alias gst='git status'
 alias gba='git branch -a'
+alias lg=lazygit
 
 #Vim
 alias v=~/tmp/squashfs-root/AppRun

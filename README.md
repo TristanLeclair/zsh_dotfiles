@@ -37,6 +37,10 @@
 - `mkdir ~/.config/zsh/plugins/gitignore`
 - https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/gitignore/gitignore.plugin.zsh
 
+### lazygit
+
+- follow [install guide](https://github.com/jesseduffield/lazygit#installation)
+
 ## Next steps for setup
 
 - neovim
