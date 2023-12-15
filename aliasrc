@@ -20,7 +20,7 @@ alias gba='git branch -a'
 alias lg=lazygit
 
 #Vim
-alias v=~/tmp/squashfs-root/AppRun
+alias v=nvim
 
 # enable color support of ls and also add handy aliases
   if [ -x /usr/bin/dircolors ]; then
