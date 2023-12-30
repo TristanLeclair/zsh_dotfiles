@@ -8,6 +8,12 @@ alias open='cmd.exe /C start'
 alias trist='cd /mnt/c/Users/trist'
 alias github='cd /mnt/c/Users/trist/Github'
 
+# Cat
+alias cat=batcat
+
+# Fzf
+alias fzfp='fzf --preview "batcat --color=always --style=header,grid --line-range :500 {}"'
+
 #LS
 alias ls='exa'
 alias ll='exa --long --all --header --icons'
