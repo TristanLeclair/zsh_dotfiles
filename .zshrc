@@ -47,6 +47,7 @@ autoload -Uz colors && colors
 # Plugins, must be installed via git in the $ZDOTDIR/plugins directory
 
 source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey '^n' autosuggest-accept
 
 #Theme for syntax highlighting
 source $ZDOTDIR/plugins/catppuccin/catppuccin_mocha-zsh-syntax-highlighting.zsh
