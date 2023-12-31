@@ -13,6 +13,7 @@ alias cat=batcat
 
 # Fzf
 alias fzfp='fzf --preview "batcat --color=always --style=header,grid --line-range :500 {}"'
+alias nf='nvim $(fzf)'
 
 #LS
 alias ls='exa'
