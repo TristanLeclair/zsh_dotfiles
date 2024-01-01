@@ -53,8 +53,8 @@ bindkey '^n' autosuggest-accept
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
 
-export FZF_CTRL_R_OPTS="--reverse"
-export FZF_TMUX_OPTS="-p --height 40% --layout=reverse --border"
+export FZF_CTRL_R_OPTS='--height 40% --layout=reverse --border'
+export FZF_TMUX_OPTS="-p"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/*"'
