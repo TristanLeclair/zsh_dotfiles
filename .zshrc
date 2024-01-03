@@ -64,6 +64,24 @@ source /etc/zsh_command_not_found
 
 export PATH=/home/tlecla/.local/bin:$PATH
 
+# neovim switcher
+alias nvim-lazy="NVIM_APPNAME=Lazyvim nvim"
+alias nvim-kickstart="NVIM_APPNAME=kickstart nvim"
+
+function nvims() {
+  items=("default" "kickstart" "LazyVim")
+  config=$(printf "%s\n" "${items[@]}" | fzf --prompt="?  Neovim Config ? " --height=50% --layout=reverse --border --exit-0)
+  if [[ -z $config ]]; then
+    echo "Nothing selected"
+    return 0
+  elif [[ $config == "default" ]]; then
+    config=""
+  fi
+  NVIM_APPNAME=$config nvim $@
+}
+
+bindkey -s ^n "nvims\n"
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/tlecla/miniconda/3.11.4/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
