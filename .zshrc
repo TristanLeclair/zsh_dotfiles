@@ -94,7 +94,7 @@ function nvims() {
   NVIM_APPNAME=$config nvim $@
 }
 
-bindkey -s ^n "nvims\n"
+bindkey -s ^b "nvims\n"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
