@@ -24,8 +24,8 @@ export KEYTIMEOUT=1
 export EDITOR='nvim'
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
 # Use modern completion system
