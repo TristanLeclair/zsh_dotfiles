@@ -24,8 +24,8 @@ export KEYTIMEOUT=1
 export EDITOR='nvim'
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
 # Use modern completion system
@@ -97,6 +97,24 @@ source /etc/zsh_command_not_found
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 export PATH=/home/tlecla/.local/bin:$PATH
+
+# neovim switcher
+alias nvim-lazy="NVIM_APPNAME=Lazyvim nvim"
+alias nvim-kickstart="NVIM_APPNAME=kickstart nvim"
+
+function nvims() {
+  items=("default" "kickstart" "LazyVim")
+  config=$(printf "%s\n" "${items[@]}" | fzf --prompt="?  Neovim Config ? " --height=50% --layout=reverse --border --exit-0)
+  if [[ -z $config ]]; then
+    echo "Nothing selected"
+    return 0
+  elif [[ $config == "default" ]]; then
+    config=""
+  fi
+  NVIM_APPNAME=$config nvim $@
+}
+
+bindkey -s ^b "nvims\n"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

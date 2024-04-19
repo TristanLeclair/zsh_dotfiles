@@ -14,7 +14,7 @@ alias cat=bat
 
 # Fzf
 alias fzfp='fzf --preview "batcat --color=always --style=header,grid --line-range :500 {}"'
-alias nf='nvim $(fzf)'
+alias nf='nvim $(fzfp)'
 
 #LS
 alias ls='exa'
