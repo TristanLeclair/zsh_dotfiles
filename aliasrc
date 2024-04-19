@@ -9,7 +9,8 @@ alias trist='cd /mnt/c/Users/trist'
 alias github='cd /mnt/c/Users/trist/Github'
 
 # Cat
-alias cat=batcat
+alias bat=batcat
+alias cat=bat
 
 # Fzf
 alias fzfp='fzf --preview "batcat --color=always --style=header,grid --line-range :500 {}"'
