@@ -1,16 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-# Set up the prompt
-
-autoload -Uz promptinit
-promptinit
-prompt adam1
-
 # See `man zshoptions` for details
 setopt histignorealldups sharehistory autocd menucomplete
 
@@ -41,15 +28,14 @@ autoload -Uz colors && colors
 # Load aliases
 [ -f "$ZDOTDIR/aliasrc" ] && source "$ZDOTDIR/aliasrc"
 for file in "$ZDOTDIR"/aliases/*; do
-  echo $file
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 
-# z
-# . $ZDOTDIR/plugins/z/z.sh
-
 # zoxide
 eval "$(zoxide init zsh)"
+
+# oh my posh prompt
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/base.toml)"
 
 # Plugins, must be installed via git in the $ZDOTDIR/plugins directory
 
@@ -88,7 +74,6 @@ _fzf_comprun() {
 source $ZDOTDIR/plugins/catppuccin/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $ZDOTDIR/plugins/powerlevel10k/powerlevel10k.zsh-theme
 
 # Gitignore plugin
 source $ZDOTDIR/plugins/gitignore/gitignore.plugin.zsh
@@ -96,9 +81,6 @@ source $ZDOTDIR/plugins/gitignore/gitignore.plugin.zsh
 # Apt plugins suggestions
 # apt install command-not-found
 source /etc/zsh_command_not_found
-
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 export PATH=/home/tlecla/.local/bin:$PATH
 
