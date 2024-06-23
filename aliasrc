@@ -17,9 +17,9 @@ alias fzfp='fzf --preview "batcat --color=always --style=header,grid --line-rang
 alias nf='nvim $(fzfp)'
 
 #LS
-alias ls='exa'
-alias ll='exa --long --all --header --icons'
-alias la='exa -a'
+alias ls='eza'
+alias ll='eza --long --all --icons'
+alias la='eza -a'
 
 #Git
 alias g=git
@@ -49,8 +49,5 @@ alias ts='tmux new'
 alias tat='tmux a -t'
 alias tst='tmux new -s'
 
-alias tree="tree -I '.git|venv'"
-
-# Python
-alias startenv='source venv/bin/activate'
-alias startdevenv='source dev-venv/bin/activate'
+alias tree="eza -T"
+alias treel="eza -Tl --icons"

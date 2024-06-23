@@ -1,0 +1,3 @@
+# Python
+alias stenv='source venv/bin/activate'
+alias stdevenv='source dev-venv/bin/activate'

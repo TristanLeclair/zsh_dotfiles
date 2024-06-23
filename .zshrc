@@ -40,6 +40,10 @@ autoload -Uz colors && colors
 
 # Load aliases
 [ -f "$ZDOTDIR/aliasrc" ] && source "$ZDOTDIR/aliasrc"
+for file in "$ZDOTDIR"/aliases/*; do
+  echo $file
+  [ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
 
 # z
 # . $ZDOTDIR/plugins/z/z.sh
