@@ -15,6 +15,12 @@ alias cat=bat
 # Fzf
 alias fzfp='fzf --preview "batcat --color=always --style=header,grid --line-range :500 {}"'
 alias nf='nvim $(fzfp)'
+alias hy="
+  fc -ln 0 |
+  awk '!a[\$0]++' |
+  fzf --tac --multi --header 'Copy history' |
+  clip.exe
+"
 
 #LS
 alias ls='eza'

@@ -43,8 +43,7 @@ source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^n' autosuggest-accept
 
 # Fzf
-source /usr/share/doc/fzf/examples/key-bindings.zsh
-source /usr/share/doc/fzf/examples/completion.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export FZF_CTRL_R_OPTS='--height 40% --layout=reverse --border'
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
