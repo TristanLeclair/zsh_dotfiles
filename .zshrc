@@ -26,7 +26,7 @@ _comp_options+=(globdots)
 autoload -Uz colors && colors
 
 # Load aliases
-[ -f "$ZDOTDIR/aliasrc" ] && source "$ZDOTDIR/aliasrc"
+[ -f "$ZDOTDIR/.aliases" ] && source "$ZDOTDIR/.aliases"
 for file in "$ZDOTDIR"/aliases/*; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
