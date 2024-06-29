@@ -10,6 +10,8 @@ export KEYTIMEOUT=1
 
 export EDITOR='nvim'
 
+export PATH=/home/tlecla/.local/bin:$PATH
+
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=10000
 SAVEHIST=10000
@@ -80,8 +82,6 @@ source $ZDOTDIR/plugins/gitignore/gitignore.plugin.zsh
 # Apt plugins suggestions
 # apt install command-not-found
 source /etc/zsh_command_not_found
-
-export PATH=/home/tlecla/.local/bin:$PATH
 
 # neovim switcher
 alias nvim-lazy="NVIM_APPNAME=Lazyvim nvim"
